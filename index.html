@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego de Botones</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="game-container">
+        <h1>Encuentra los botones secretos</h1>
+        <div class="buttons-grid" id="buttons-container"></div>
+        
+        <div id="modal" class="modal">
+            <div class="modal-content">
+                <button class="close-btn">&times;</button>
+                <h2 id="modal-title"></h2>
+                <div class="password-section" id="password-section">
+                    <input type="password" id="password-input" placeholder="Introduce la contraseña secreta">
+                    <button id="submit-password" class="submit-btn">Verificar</button>
+                    <p class="error-message" id="error-msg"></p>
+                </div>
+                <div class="message-section" id="message-section">
+                    <p id="modal-text"></p>
+                    <button id="copy-button" class="copy-btn">Copiar Texto</button>
+                    <span id="timer" class="timer"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
